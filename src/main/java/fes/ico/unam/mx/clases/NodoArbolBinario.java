@@ -7,20 +7,21 @@ public class NodoArbolBinario<T extends Comparable<T>> implements Comparable<Nod
 private T data;
 private NodoArbolBinario<T> hijoIzquierdo;
 private NodoArbolBinario<T> hijoDerecho;
+//Constructor basico
 
 public NodoArbolBinario() {
 }
-
+//constructor de data
 public NodoArbolBinario(T data) {
     this.data = data;
 }
-
+//constructor principal
 public NodoArbolBinario(T data, NodoArbolBinario<T> hijoIzquierdo, NodoArbolBinario<T> hijoDerecho) {
     this.data = data;
     this.hijoIzquierdo = hijoIzquierdo;
     this.hijoDerecho = hijoDerecho;
 }
-
+//metodos get y set
 public T getData() {
     return data;
 }

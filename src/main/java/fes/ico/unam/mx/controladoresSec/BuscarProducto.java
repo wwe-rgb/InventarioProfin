@@ -21,7 +21,7 @@ public class BuscarProducto {
         // Obtener la instancia del gestor de productos
         gestorProductos = GestorProductos.obtenerInstancia();
     }
-
+//Busca por el id el producto que quieras visualizar
     @FXML
     void Buscar(ActionEvent event) {
         try {
@@ -51,7 +51,7 @@ public class BuscarProducto {
             Resultado.setText("");
         }
     }
-
+//Muestra la alerta de que esta el producto
     private void mostrarAlerta(String mensaje) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Información");

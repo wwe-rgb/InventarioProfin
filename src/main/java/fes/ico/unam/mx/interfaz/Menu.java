@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Menu {
+    //Ventana para agregar productos
     @FXML
     void agregarProducto(ActionEvent event) {try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/ico/unam/mx/fxml/agregarProducto.fxml"));
@@ -24,7 +25,7 @@ public class Menu {
         e.printStackTrace();
     }
     }
-
+//Ventana para buscar productos
     @FXML
     void buscarProducto(ActionEvent event) {try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/ico/unam/mx/fxml/buscarProducto.fxml"));
@@ -39,6 +40,7 @@ public class Menu {
         e.printStackTrace();
     }
 }
+//Ventana para eliminar productos
     @FXML
     void eiminarProducto(ActionEvent event) {try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/ico/unam/mx/fxml/eliminarProducto.fxml"));
@@ -53,7 +55,7 @@ public class Menu {
         e.printStackTrace();
     }
     }
-
+//Ventana para lista de productos
     @FXML
     void listarProductos(ActionEvent event) {try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/ico/unam/mx/fxml/listarProducto.fxml"));

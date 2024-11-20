@@ -48,7 +48,7 @@ public class AgregarProducto {
             mostrarAlerta("Error", "Ocurrió un error al agregar el producto: " + e.getMessage(), Alert.AlertType.ERROR);
         }
     }
-
+//Muestra los productos agregados
     @FXML
     void mostrarProductos(ActionEvent event) {
         try {
@@ -59,13 +59,14 @@ public class AgregarProducto {
             mostrarAlerta("Error", "Error al mostrar los productos: " + e.getMessage(), Alert.AlertType.ERROR);
         }
     }
-
+//Limpia los campos antes de volver a meter valores
     private void limpiarCampos() {
         Producto1.clear();
         Producto2.clear();
         Producto3.clear();
         Producto4.clear();
     }
+    //Muestra la alerta de los productos agregados
 
     private void mostrarAlerta(String titulo, String contenido, Alert.AlertType tipo) {
         Alert alert = new Alert(tipo);

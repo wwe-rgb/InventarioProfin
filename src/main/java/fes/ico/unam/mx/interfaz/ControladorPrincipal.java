@@ -29,7 +29,7 @@ public class ControladorPrincipal  {
     private TextField btmCorreo;
 
 
-
+//Ventana de inicio de sesion
     @FXML
     void iniciarSesion(ActionEvent event) {try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/fes/ico/unam/mx/fxml/menu.fxml"));
