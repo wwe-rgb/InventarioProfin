@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox spacing="10" alignment="CENTER" prefWidth="600" prefHeight="400"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="fes.ico.unam.mx.controladoresSec.ListarProducto">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Inventario de Productos (Orden Ascendente por ID)"
+           style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <ListView fx:id="listaProductos" VBox.vgrow="ALWAYS"/>
+
+    <Button text="Actualizar Lista" onAction="#actualizarLista"
+            style="-fx-font-size: 14px;"/>
+
+</VBox>

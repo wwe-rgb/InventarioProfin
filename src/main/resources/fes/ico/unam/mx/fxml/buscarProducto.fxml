@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fes.ico.unam.mx.controladoresSec.BuscarProducto">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="651.0">
+         <image>
+            <Image url="@../../../../../fes.ico.unam.mx.images/BEBE3-1-1024x683.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Buscar" layoutX="224.0" layoutY="105.0" prefHeight="27.0" prefWidth="223.0" />
+      <Label layoutX="215.0" layoutY="55.0" text="Ingrese el id del producto" textFill="#1e5ae6">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="191.0" text="Da click en buscar" textFill="#e0190b">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Resultado" layoutX="213.0" layoutY="318.0" prefHeight="27.0" prefWidth="223.0" />
+      <Button layoutX="269.0" layoutY="246.0" mnemonicParsing="false" onAction="#Buscar" prefHeight="34.0" prefWidth="105.0" text="Buscar" />
+   </children>
+</AnchorPane>
